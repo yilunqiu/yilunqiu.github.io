@@ -75,18 +75,6 @@
   			
     <div class="col-md-6 col-12 mb-4">
   <div class="hovereffect">
-    <a href="/2021/08/18/beryl/">
-      <img class="img-fluid portfolio-img" src="/images/01.jpg" alt="BERYL | Cardigan">
-      <div class="overlay">
-        <span class="overlay-text">BERYL | Cardigan</span>
-      </div>
-    </a>
-  </div>
-</div>
-
-
-    <div class="col-md-6 col-12 mb-4">
-  <div class="hovereffect">
     <a href="/2021/08/14/reversible-coat/">
       <img class="img-fluid portfolio-img" src="/images/22.jpg" alt="NOREN | Reversible Trench Coat">
       <div class="overlay">
@@ -158,17 +146,7 @@
 
 
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}
-        {% if post.notshow != true %}
-            {{ post_template.render(post, true) }}
-        {% endif %}
-    {% endfor %}
-  </section>
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
       </div>
       
   	</div>
